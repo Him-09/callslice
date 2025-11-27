@@ -113,7 +113,7 @@ const DemoRequestModal = ({ isOpen, onClose }) => {
           <>
             <h3 className="text-lg sm:text-xl font-bold text-black mb-2 pr-8">Apply for Pilot Partner Program</h3>
             <p className="text-gray-600 text-xs sm:text-sm mb-3 sm:mb-4">
-              Join our exclusive pilot program and get <strong>2 weeks free + 50% lifetime discount</strong>
+              Join our exclusive pilot program and get <strong>2 weeks free + 35% lifetime discount</strong>
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-3">

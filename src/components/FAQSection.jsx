@@ -6,7 +6,7 @@ const FAQSection = () => {
   const faqs = [
     {
       question: "How long does setup actually take?",
-      answer: "48 hours from demo to live. We handle everything: menu configuration, POS integration, and testing. You just need to forward your phone line when you're ready."
+      answer: "24 hours from demo to live. We handle everything: menu configuration, POS integration, and testing. You just need to forward your phone line when you're ready."
     },
     {
       question: "Does the AI understand accents?",
