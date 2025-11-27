@@ -102,7 +102,7 @@ const HeroSection = ({ onOpenModal }) => {
           </div>
           
           {/* Main headline */}
-          <h1 className="text-6xl lg:text-7xl font-bold text-black mb-3 sm:mb-4 leading-[1.1] sm:leading-[1.05] tracking-tight px-2">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-black mb-3 sm:mb-4 leading-[1.1] sm:leading-[1.05] tracking-tight px-2">
             <span className="block mb-1 sm:mb-2">Stop losing pizza orders to</span>
             <span className="bg-gradient-to-r from-[#F63A6E] to-[#2979FF] bg-clip-text text-transparent">
               missed 
