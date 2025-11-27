@@ -43,9 +43,9 @@ const Navbar = ({ onOpenModal }) => {
               <img 
                 src="/icon.png" 
                 alt="CallSlice Icon" 
-                className="h-12 w-12"
+                className="h-10 w-10 sm:h-12 sm:w-12"
               />
-              <span className="text-2xl font-bold text-black -ml-2">CallSlice</span>
+              <span className="text-lg sm:text-2xl font-bold text-black -ml-1 sm:-ml-2">CallSlice</span>
             </div>
 
             {/* Desktop Navigation - Centered */}
@@ -88,7 +88,7 @@ const Navbar = ({ onOpenModal }) => {
                 onClick={handleCtaClick}
                 className="px-6 py-2.5 rounded-lg font-medium text-white bg-gradient-to-r from-[#F63A6E] to-[#2979FF] hover:shadow-lg transition-all text-sm"
               >
-                Apply for Early Access
+                Join the pilot
               </button>
             </div>
 

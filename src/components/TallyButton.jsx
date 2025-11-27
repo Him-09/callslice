@@ -7,7 +7,7 @@ const TallyButton = () => {
       <div className="sm:hidden fixed bottom-6 right-6 z-40">
         <div className="relative w-20 h-20 flex items-center justify-center">
           {/* Rotating circular text */}
-          <svg className="absolute inset-0 w-20 h-20 animate-spin-slow" style={{ animationDuration: '10s' }} viewBox="0 0 100 100">
+          <svg className="absolute inset-0 w-20 h-20 animate-spin-slow rounded-full" style={{ animationDuration: '10s' }} viewBox="0 0 100 100">
             <defs>
               <path
                 id="circlePath"
@@ -22,22 +22,17 @@ const TallyButton = () => {
           </svg>
           
           {/* Button in center */}
-          <button
-            data-tally-open="GxvJ9z"
-            data-tally-overlay="1"
-            data-tally-emoji-text="👋"
-            data-tally-emoji-animation="wave"
-            data-tally-auto-close="0"
-            data-tally-form-events-forwarding="1"
-            className="relative w-14 h-14 rounded-full bg-gradient-to-r from-[#F63A6E] to-[#2979FF] text-white shadow-2xl hover:shadow-3xl hover:scale-110 transition-all duration-300 flex items-center justify-center group animate-jiggle"
-            aria-label="Open feedback form"
+          <a
+            href="tel:+19789812243"
+            className="relative w-14 h-14 rounded-full bg-transparent hover:shadow-xl hover:border-black hover:scale-105 transition-all duration-200 flex items-center justify-center group animate-jiggle"
+            aria-label="Call us"
           >
-            <span className="text-3xl items-center group-hover:scale-125 transition-transform">👋</span>
-          </button>
+            <span className="text-3xl items-center group-hover:scale-125 transition-transform">📞</span>
+          </a>
         </div>
       </div>
 
-      {/* Desktop: Vertical tab on right edge */}
+      {/* Desktop: Vertical tab on right edge 
       <button
         data-tally-open="GxvJ9z"
         data-tally-overlay="1"
@@ -54,6 +49,7 @@ const TallyButton = () => {
       >
         <span className="bg-gradient-to-r from-[#F63A6E] to-[#2979FF] bg-clip-text text-transparent">Tell us</span>
       </button>
+      */}
     </>
   )
 }

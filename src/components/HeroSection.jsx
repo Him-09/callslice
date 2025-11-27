@@ -119,13 +119,13 @@ const HeroSection = ({ onOpenModal }) => {
           <div className="pt-2 sm:pt-4 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 px-4">
             <button
               onClick={() => scrollToSection('demo')}
-              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-bold text-white bg-black hover:bg-gray-900 hover:shadow-2xl hover:scale-105 transition-all duration-200 text-sm sm:text-base"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-bold text-white bg-black hover:bg-gray-900 hover:shadow-xl hover:scale-105 transition-all duration-200 text-sm sm:text-base"
             >
               Hear it in action
             </button>
             <button
               onClick={() => scrollToSection('how-it-works')}
-              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-bold text-black bg-white border-2 border-gray-300 hover:border-black hover:shadow-2xl hover:scale-105 transition-all duration-200 text-sm sm:text-base"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-bold text-black bg-white border-2 border-gray-300 hover:border-black hover:shadow-xl hover:scale-105 transition-all duration-200 text-sm sm:text-base"
             >
               How It Works →
             </button>

@@ -6,6 +6,8 @@ const DemoRequestModal = ({ isOpen, onClose }) => {
     email: '',
     phone: '',
     restaurantName: '',
+    pos: '',
+    posOther: '',
     message: ''
   })
   const [isSubmitted, setIsSubmitted] = useState(false)
@@ -66,6 +68,7 @@ const DemoRequestModal = ({ isOpen, onClose }) => {
           email: formData.email,
           phone: formData.phone,
           restaurantName: formData.restaurantName,
+          pos: formData.pos === 'Other' ? formData.posOther : formData.pos || 'Not specified',
           message: formData.message || 'N/A',
           _replyto: formData.email,
           _subject: `New Pilot Program Application - ${formData.restaurantName}`,
@@ -78,7 +81,7 @@ const DemoRequestModal = ({ isOpen, onClose }) => {
         setTimeout(() => {
           onClose()
           setIsSubmitted(false)
-          setFormData({ name: '', email: '', phone: '', restaurantName: '', message: '' })
+          setFormData({ name: '', email: '', phone: '', restaurantName: '', pos: '', posOther: '', message: '' })
           setPhoneError('')
           setSubmitError('')
         }, 2000)
@@ -178,6 +181,42 @@ const DemoRequestModal = ({ isOpen, onClose }) => {
                   placeholder="Joe's Burger Shop"
                 />
               </div>
+
+              <div>
+                <label className="block text-xs font-medium text-gray-700 mb-1">POS System</label>
+                <select
+                  name="pos"
+                  required
+                  value={formData.pos}
+                  onChange={handleChange}
+                  className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F63A6E] focus:border-transparent outline-none transition-all bg-white"
+                >
+                  <option value="">Select your POS system</option>
+                  <option value="Square">Square</option>
+                  <option value="Toast">Toast</option>
+                  <option value="Clover">Clover</option>
+                  <option value="Lightspeed">Lightspeed</option>
+                  <option value="TouchBistro">TouchBistro</option>
+                  <option value="Revel">Revel</option>
+                  <option value="Other">Other</option>
+                  <option value="None">None / Manual</option>
+                </select>
+              </div>
+
+              {formData.pos === 'Other' && (
+                <div>
+                  <label className="block text-xs font-medium text-gray-700 mb-1">Please specify POS system</label>
+                  <input
+                    type="text"
+                    name="posOther"
+                    required
+                    value={formData.posOther}
+                    onChange={handleChange}
+                    className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F63A6E] focus:border-transparent outline-none transition-all"
+                    placeholder="Enter your POS system name"
+                  />
+                </div>
+              )}
 
               <div>
                 <label className="block text-xs font-medium text-gray-700 mb-1">Message (Optional)</label>
