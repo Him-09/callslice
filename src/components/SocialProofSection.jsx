@@ -9,13 +9,13 @@ const SocialProofSection = () => {
       initial: "M"
     },
     {
-      quote: "⭐ Customers say the AI is faster than our staff. My team can actually focus on customers in the restaurant instead of being stuck on the phone.",
+      quote: "⭐ Customers say the virtual assistant is faster than our staff. My team can actually focus on customers in the restaurant instead of being stuck on the phone.",
       author: "Sarah Martinez",
       role: "Manager, Taco Haven",
       initial: "S"
     },
     {
-      quote: "⭐ Order accuracy improved overnight. The AI takes better orders than half my employees. Never makes mistakes, never forgets modifications.",
+      quote: "⭐ Order accuracy improved overnight. The virtual assistant takes better orders than half my employees. Never makes mistakes, never forgets modifications.",
       author: "David Park",
       role: "Owner, Palace Burgers",
       initial: "D"

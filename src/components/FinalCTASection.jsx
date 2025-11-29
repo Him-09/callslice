@@ -25,7 +25,7 @@ const FinalCTASection = ({ onOpenModal }) => {
             onClick={onOpenModal}
             className="px-10 py-4 rounded-xl font-bold text-base text-black bg-white border-white hover:border-black hover:shadow-2xl hover:scale-105 transition-all"
           >
-            Join the CallSlice Pilot →
+            Activate My Virtual Assistant →
           </button>
         </div>
 

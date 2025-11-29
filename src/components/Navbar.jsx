@@ -88,7 +88,7 @@ const Navbar = ({ onOpenModal }) => {
                 onClick={handleCtaClick}
                 className="px-6 py-2.5 rounded-lg font-medium text-white bg-gradient-to-r from-[#F63A6E] to-[#2979FF] hover:shadow-lg transition-all text-sm"
               >
-                Join the pilot
+                Activate My Assistant
               </button>
             </div>
 
@@ -157,7 +157,7 @@ const Navbar = ({ onOpenModal }) => {
                   onClick={handleCtaClick}
                   className="block w-full px-6 py-3 rounded-lg font-medium text-white bg-gradient-to-r from-[#F63A6E] to-[#2979FF] hover:shadow-lg transition-all"
                 >
-                  Join the pilot
+                  Activate My Assistant
                 </button>
               </div>
             </div>

@@ -51,7 +51,7 @@ const PricingSection = ({ onOpenModal }) => {
               onClick={onOpenModal}
               className="w-full px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-bold text-white bg-gradient-to-r from-[#F63A6E] to-[#2979FF] hover:shadow-xl hover:scale-105 transition-all text-sm sm:text-base"
             >
-              Apply for Pilot Program
+              Activate My Virtual Assistant
             </button>
           </div>
 

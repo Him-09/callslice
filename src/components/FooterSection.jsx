@@ -69,7 +69,7 @@ const FooterSection = () => {
 
         <div className="pt-6 border-t-2 border-gray-200 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm text-gray-600 font-medium">
-            © 2025 OrderAI. All rights reserved.
+            © 2025 CallSlice. All rights reserved.
           </p>
           
           

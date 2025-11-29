@@ -9,20 +9,20 @@ const FAQSection = () => {
       answer: "24 hours from demo to live. We handle everything: menu configuration, POS integration, and testing. You just need to forward your phone line when you're ready."
     },
     {
-      question: "Does the AI understand accents?",
+      question: "Does the virtual assistant understand accents?",
       answer: "Yes. CallSlice is trained on thousands of real restaurant calls and handles strong accents, background noise, and casual slang."
     },
     {
       question: "What if customers have complex orders?",
-      answer: "Our AI handles customizations, special requests, and modifications just like a trained employee. It confirms every detail before finalizing the order."
+      answer: "Our virtual assistant handles customizations, special requests, and modifications just like a trained employee. It confirms every detail before finalizing the order."
     },
     {
       question: "Does it work with my POS system?",
       answer: "Yes. We integrate with Square, Toast, Clover, and most major POS systems. If you use something else, we can build a custom integration."
     },
     {
-      question: "What happens if the AI can't handle a call?",
-      answer: "In rare cases where the AI needs help, it seamlessly transfers to your staff. We also monitor every call and continuously improve the system."
+      question: "What happens if the virtual assistant can't handle a call?",
+      answer: "In rare cases where the virtual assistant needs help, it seamlessly transfers to your staff. We also monitor every call and continuously improve the system."
     },
     {
       question: "Can I cancel anytime?",
@@ -30,7 +30,7 @@ const FAQSection = () => {
     },
     {
       question: "How many calls can it handle at once?",
-      answer: "Unlimited. Unlike human staff, the AI can handle dozens of simultaneous calls during rush hour without any quality drop."
+      answer: "Unlimited. Unlike human staff, the virtual assistant can handle dozens of simultaneous calls during rush hour without any quality drop."
     }
   ]
 

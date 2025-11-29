@@ -11,13 +11,13 @@ const HowItWorksSection = ({ onOpenModal }) => {
     {
       number: "2",
       title: "We handle setup",
-      description: "We build your menu, train the AI on your items, and configure your POS—done for you.",
+      description: "We build your menu, train the virtual assistant on your items, and configure your POS—done for you.",
       detail: "Seamless integration with Square, Toast, Clover, and 10+ other systems."
     },
     {
       number: "3",
       title: "Start taking orders",
-      description: "Your AI assistant starts taking real orders within 24 hours.",
+      description: "Your virtual assistant starts taking real orders within 24 hours.",
       detail: "Handle unlimited calls 24/7 while your team focuses on serving great food."
     }
   ]

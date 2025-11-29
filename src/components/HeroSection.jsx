@@ -112,7 +112,7 @@ const HeroSection = ({ onOpenModal }) => {
           
           {/* Subheadline - enhanced */}
           <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-medium px-4">
-            Your AI assistant answers every call instantly, takes accurate orders, and sends them straight into your POS—so your team can focus on cooking.
+            Your virtual assistant answers every call instantly, takes accurate orders, and sends them straight into your POS—so your team can focus on cooking.
           </p>
           
           {/* CTA buttons - enhanced spacing */}

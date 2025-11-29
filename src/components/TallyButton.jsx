@@ -1,22 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const TallyButton = () => {
+  const [isHovered, setIsHovered] = useState(false)
+
   return (
     <>
-      {/* Mobile: Circle button at bottom right with jiggle */}
-      <div className="sm:hidden fixed bottom-6 right-6 z-40">
-        <div className="relative w-20 h-20 flex items-center justify-center">
+      {/* Mobile & Desktop: Circle button at bottom right */}
+      <div className="fixed bottom-6 right-6 z-40">
+        <div className="relative w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center">
+          {/* Pulsing ring effect */}
+          <div className="absolute inset-2 rounded-full bg-gradient-to-r from-[#F63A6E] to-[#2979FF] opacity-30 animate-ping" style={{ animationDuration: '2s' }}></div>
+          
+          {/* Gradient border ring */}
+          <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#F63A6E] to-[#2979FF] p-[2px]">
+            <div className="w-full h-full rounded-full bg-white"></div>
+          </div>
+          
           {/* Rotating circular text */}
-          <svg className="absolute inset-0 w-20 h-20 animate-spin-slow rounded-full" style={{ animationDuration: '10s' }} viewBox="0 0 100 100">
+          <svg 
+            className="absolute inset-0 w-20 h-20 sm:w-24 sm:h-24 animate-spin-slow" 
+            style={{ 
+              animationDuration: isHovered ? '6s' : '12s'
+            }} 
+            viewBox="0 0 100 100"
+          >
             <defs>
               <path
                 id="circlePath"
                 d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
               />
             </defs>
-            <text className="text-[11px] fill-black font-bold uppercase tracking-wider">
+            <text className="text-[9px] sm:text-[9px] font-bold uppercase fill-slate-700" letterSpacing="0.8">
               <textPath href="#circlePath" startOffset="0%">
-                Tell us • Tell us • Tell us • Tell us • Tell us • Tell us • Tell us • Tell us
+                Call Demo • Try it • Call Demo • Try it •
               </textPath>
             </text>
           </svg>
@@ -24,32 +40,31 @@ const TallyButton = () => {
           {/* Button in center */}
           <a
             href="tel:+19789812243"
-            className="relative w-14 h-14 rounded-full bg-transparent hover:shadow-xl hover:border-black hover:scale-105 transition-all duration-200 flex items-center justify-center group animate-jiggle"
-            aria-label="Call us"
+            className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-[#F63A6E] to-[#2979FF] hover:shadow-2xl hover:shadow-pink-500/50 hover:scale-100 hover:sm:scale-105 transition-all duration-300 flex items-center justify-center group"
+            aria-label="Call demo number: +1 978 981 2243"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
           >
-            <span className="text-3xl items-center group-hover:scale-125 transition-transform">📞</span>
+            {/* White glow effect on hover */}
+            <div className="absolute inset-0 rounded-full bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+            
+            {/* Phone icon */}
+            <svg 
+              className="w-7 h-7 sm:w-7 sm:h-7 text-white group-hover:scale-110 group-hover:rotate-12 transition-all duration-300" 
+              fill="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+            </svg>
+            
+            {/* Tooltip on hover */}
+            <div className="absolute -top-14 right-0 bg-slate-900 text-white px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none shadow-xl">
+              Call +1 (978) 981-2243
+              <div className="absolute -bottom-1 right-6 w-2 h-2 bg-slate-900 transform rotate-45"></div>
+            </div>
           </a>
         </div>
       </div>
-
-      {/* Desktop: Vertical tab on right edge 
-      <button
-        data-tally-open="GxvJ9z"
-        data-tally-overlay="1"
-        data-tally-emoji-text="👋"
-        data-tally-emoji-animation="wave"
-        data-tally-auto-close="0"
-        data-tally-form-events-forwarding="1"
-        className="hidden sm:flex fixed right-0 top-1/2 -translate-y-1/2 z-40 bg-white px-3 py-6 rounded-l-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 font-bold text-lg flex-col items-center gap-2 group border-2 border-r-0 border-gradient"
-        style={{ 
-          writingMode: 'vertical-rl',
-          borderImage: 'linear-gradient(to right, #F63A6E, #2979FF) 1'
-        }}
-        aria-label="Open feedback form"
-      >
-        <span className="bg-gradient-to-r from-[#F63A6E] to-[#2979FF] bg-clip-text text-transparent">Tell us</span>
-      </button>
-      */}
     </>
   )
 }
